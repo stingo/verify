@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def after_sign_in_path_for(resource)
-  session[:return_to] || users_url
+  session[:return_to] || new_user_path
 end
 
 
